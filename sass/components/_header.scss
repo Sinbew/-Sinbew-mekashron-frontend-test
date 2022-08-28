@@ -1,0 +1,49 @@
+.header-container {
+  padding-top: 15px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-image {
+  width: 185px;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4px;
+}
+
+.greeting {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+}
+
+.username {
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.logout {
+  line-height: 1.28;
+  font-weight: 500;
+
+  color: #0061a3;
+}
+
+.balance {
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 400;
+}
+
+.balance-value {
+  font-weight: 700;
+  line-height: 1.28;
+}
