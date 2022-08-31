@@ -1,0 +1,89 @@
+.latest-winners-section {
+  padding-top: 32px;
+}
+
+.latest-winners-section button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  width: 100%;
+  max-width: 343px;
+
+  padding: 13px 34px;
+
+  background-color: #f30000;
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+
+  border-radius: 8px;
+  border: none;
+}
+
+.total-prizes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 5px 0 10px 0;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.total-prizes h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.total-prizes h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.85;
+
+  color: #13902a;
+}
+
+.total-prizes p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.total-prizes span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.total-prizes-list {
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  height: 375px;
+
+  overflow-y: scroll;
+}
+
+.total-prizes-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 10px 0 10px 15px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}

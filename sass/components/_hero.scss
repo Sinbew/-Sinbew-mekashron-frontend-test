@@ -1,0 +1,16 @@
+.hero-section {
+  padding-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 480px;
+
+  @media screen and (max-width: 374.92px) {
+    width: auto;
+  }
+}
