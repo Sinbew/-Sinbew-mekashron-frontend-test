@@ -27,3 +27,26 @@ body {
     padding: 0 15px;
   }
 }
+
+.desktop-container-lottery {
+  @media screen and (max-width: 1199.92px) {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lottery-and-winners-desktop-wrapper {
+    display: flex;
+    gap: 15px;
+
+    width: 1200px;
+    padding: 0 15px;
+
+    padding-top: 75px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

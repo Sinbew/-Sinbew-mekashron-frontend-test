@@ -57,6 +57,25 @@ body {
   }
 }
 
+@media screen and (max-width: 1199.92px) {
+  .desktop-container-lottery {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lottery-and-winners-desktop-wrapper {
+    display: flex;
+    gap: 15px;
+    width: 1200px;
+    padding: 0 15px;
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .header-container {
   padding-top: 15px;
 }
@@ -105,6 +124,96 @@ body {
   line-height: 1.28;
 }
 
+.header-socials-desktop {
+  display: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    padding: 15px;
+  }
+  .desktop-header-wrapper {
+    display: flex;
+    gap: 29px;
+    margin-bottom: 15px;
+  }
+  .navigation svg {
+    display: none;
+  }
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .header-socials-desktop {
+    display: block;
+    margin-left: auto;
+  }
+  .desktop-socials {
+    margin-bottom: 10px;
+  }
+  .language-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .language-select img {
+    width: 20px;
+    height: 14px;
+  }
+  select {
+    border: none;
+  }
+  .nav-desktop {
+    display: block;
+  }
+  .nav-links-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-transform: uppercase;
+    background-color: #f30000;
+    border-radius: 8px;
+  }
+  .nav-links-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+  }
+  .nav-links-item::after {
+    content: "";
+    width: 1px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 25px;
+    background-color: #fff;
+  }
+  .nav-links-list li a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .nav-links-list button {
+    margin-left: auto;
+    background: #0061a3;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 8px 38px;
+    text-transform: uppercase;
+    border: none;
+  }
+}
 .hero-section {
   padding-top: 24px;
   margin-left: auto;
@@ -123,6 +232,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-image {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
 .list {
   padding-top: 16px;
   display: flex;
@@ -142,6 +257,7 @@ body {
 .description-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .action-title-wrapper {
@@ -167,11 +283,21 @@ body {
 
 .action-description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13.6px;
   line-height: 1.21;
   color: #5f5f5f;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-it-works-section {
+    padding-top: 30px;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
 .lottery-list {
   display: flex;
   flex-direction: column;
@@ -279,6 +405,31 @@ body {
   gap: 4px;
 }
 
+@media (min-width: 1200px) {
+  .lottery-section {
+    padding-top: 75px;
+  }
+  .lottery-section h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .lottery-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .lottery-list-item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  }
+  .lottery-bottom-wrapper {
+    gap: 40px;
+  }
+  .lottery-bottom-wrapper button {
+    width: 177px;
+  }
+}
 .upcoming-section {
   padding-top: 32px;
 }
@@ -415,6 +566,21 @@ body {
   color: #0061a3;
 }
 
+@media (min-width: 1200px) {
+  .upcoming-section {
+    padding-top: 75px;
+  }
+  .upcoming-button {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .upcoming-list {
+    --item: 5;
+  }
+  .upcoming-list-item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  }
+}
 .biggest-lottery-section {
   padding-top: 31px;
 }
@@ -426,7 +592,6 @@ body {
   margin-right: auto;
   margin-bottom: 16px;
   width: 100%;
-  max-width: 343px;
   padding: 13px 34px;
   background-color: #f30000;
   color: #fff;
@@ -508,10 +673,10 @@ body {
   font-size: 14px;
   line-height: 1.2;
   font-weight: 500;
-  color: #007aff;
+  color: #0061a3;
 }
 
-.biggest-lottery-wrapper button {
+.play-now-button-mobile {
   background: #f7d300;
   border-radius: 8px;
   display: block;
@@ -526,6 +691,65 @@ body {
   line-height: 1.3;
 }
 
+.play-now-button-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .biggest-lottery-section {
+    padding-top: 0;
+    width: 775px;
+  }
+  .biggest-lottery-button {
+    max-width: 775px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .biggest-lottery-wrapper {
+    width: 775px;
+  }
+  .loto-result-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 415px;
+  }
+  .loto-result-desktop-wrapper {
+    display: flex;
+    gap: 15px;
+    padding: 0 0 0 20px;
+    margin-top: 12px;
+  }
+  .winner-description {
+    text-align: start;
+    max-width: 232px;
+    display: flex;
+    flex-direction: column;
+  }
+  .play-now-button-mobile {
+    display: none;
+  }
+  .play-now-button-desktop {
+    background: #f7d300;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 232px;
+    padding: 8px 0;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: auto;
+  }
+  .winner-description a {
+    color: #0061a3;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
 .latest-winners-section {
   padding-top: 32px;
 }
@@ -537,7 +761,6 @@ body {
   margin-right: auto;
   margin-bottom: 16px;
   width: 100%;
-  max-width: 343px;
   padding: 13px 34px;
   background-color: #f30000;
   color: #fff;
@@ -602,9 +825,34 @@ body {
   border-radius: 8px;
 }
 
+@media (min-width: 1200px) {
+  .latest-winners-section {
+    width: 380px;
+    padding: 0;
+  }
+  .latest-winners-section button {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .prizes-container {
+    width: 380px;
+  }
+  .total-prizes-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 245px;
+    overflow-y: scroll;
+  }
+}
 .footer {
   padding: 32px 0;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/desktop/footer/gradient.png");
 }
 
 .footer-img-wrap {
@@ -727,4 +975,95 @@ body {
 .socials-footer {
   text-align: end;
   margin-right: 80px;
+}
+
+.useful-links-title-desktop {
+  display: none;
+}
+
+.socials-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 56px;
+  }
+  .footer-wrapper-desktop {
+    padding: 0 108px;
+    position: relative;
+    z-index: 20;
+  }
+  .useful-links-title {
+    display: none;
+  }
+  .useful-links {
+    flex-direction: column;
+    gap: 0;
+    flex-shrink: 0;
+  }
+  .footer-info-wrapper {
+    display: flex;
+    gap: 192px;
+  }
+  .useful-links-title-desktop {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .live-chat {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 20;
+    margin-bottom: 36px;
+  }
+  .adress-desktop p {
+    margin-top: 15px;
+    width: 249px;
+  }
+  .payments-security {
+    flex-direction: column;
+  }
+  .payments {
+    margin-top: 0;
+  }
+  .security {
+    margin-top: 0;
+  }
+  .socials-desktop {
+    display: block;
+    margin-left: auto;
+    margin-right: 70px;
+  }
+  .socials-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199.92px) {
+  .faq {
+    display: none;
+  }
+}
+.faq {
+  padding-top: 75px;
+}
+
+.faq h2 {
+  margin-bottom: 30px;
+}
+
+.faq select {
+  margin-bottom: 10px;
+  width: 775px;
+  padding: 15px 0 20px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #0061a3;
+  border-bottom: 1px solid #e0e0e0;
 }/*# sourceMappingURL=main.css.map */

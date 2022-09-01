@@ -10,7 +10,6 @@
   margin-bottom: 16px;
 
   width: 100%;
-  max-width: 343px;
 
   padding: 13px 34px;
 
@@ -111,10 +110,10 @@
   line-height: 1.2;
   font-weight: 500;
 
-  color: #007aff;
+  color: #0061a3;
 }
 
-.biggest-lottery-wrapper button {
+.play-now-button-mobile {
   background: #f7d300;
   border-radius: 8px;
 
@@ -131,4 +130,84 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.3;
+}
+
+.play-now-button-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .biggest-lottery-section {
+    padding-top: 0;
+
+    width: 775px;
+  }
+
+  .biggest-lottery-button {
+    max-width: 775px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .biggest-lottery-wrapper {
+    width: 775px;
+  }
+
+  .loto-result-desktop {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 415px;
+  }
+
+  .loto-result-desktop-wrapper {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 0 0 0 20px;
+    margin-top: 12px;
+  }
+
+  .winner-description {
+    text-align: start;
+    max-width: 232px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .play-now-button-mobile {
+    display: none;
+  }
+
+  .play-now-button-desktop {
+    background: #f7d300;
+    border-radius: 8px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 232px;
+
+    padding: 8px 0;
+
+    border: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+
+    margin-top: auto;
+  }
+
+  .winner-description a {
+    color: #0061a3;
+    text-align: center;
+
+    text-decoration: underline;
+  }
 }

@@ -162,3 +162,20 @@
 
   color: #0061a3;
 }
+
+@media (min-width: 1200px) {
+  .upcoming-section {
+    padding-top: 75px;
+  }
+
+  .upcoming-button {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .upcoming-list {
+    --item: 5;
+  }
+  .upcoming-list-item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  }
+}
